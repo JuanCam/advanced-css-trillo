@@ -15,5 +15,15 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
-@import "abstract/variables.scss";
-@import "base/page.scss";
+
+@import "abstract/variables";
+@import "base/page";
+
+@import "layout/container";
+@import "layout/header";
+@import "layout/hotel-view";
+@import "layout/sider";
+
+@import "components/logo";
+@import "components/search";
+@import "components/user-nav";
