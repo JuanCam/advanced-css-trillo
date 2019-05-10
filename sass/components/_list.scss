@@ -1,0 +1,35 @@
+.list {
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: 7px;
+
+    }
+
+    &__item::before {
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 7px;
+
+        //Older browsers
+        // background-image: url(../img/chevron-thin-right.svg);
+        // background-size: cover;
+
+        // Newer browsers - Mask
+        background-color: var(--color-primary);
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+    }
+     
+}
