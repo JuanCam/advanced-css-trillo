@@ -6,6 +6,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px
+
+    @media only screen and (max-width: $largest-bp) {
+        font-size: 50%;
+    }
 }
 
 *,
@@ -28,6 +32,10 @@ body {
 
 .content {
     display: flex;
+
+    @media only screen and (max-width: $medium-bp) {
+        flex-direction: column;
+    }
 }
 
 .legal {
@@ -35,6 +43,10 @@ body {
     padding: 2.5rem;
     text-align: center;
     color: var(--grey-light-4);
+
+    @media only screen and (max-width: $medium-bp) {
+        display: none;
+    }
 }
 
 .sidebar {
